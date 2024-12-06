@@ -91,16 +91,6 @@ img{
   z-index: 100;
   transition: object-fit 1s ease-in;
 }
-#listaActores{
-  width: 100%;
-  max-height: 80%;
-  overflow: auto;
-  list-style: none;
-}
 
-details{
-  max-width: 100%;
-  height: 200px;
-}
 
 </style>
