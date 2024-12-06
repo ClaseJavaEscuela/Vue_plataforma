@@ -1,15 +1,14 @@
 <script setup>
   import{RouterView} from 'vue-router';
-  import HeaderPage from "./components/layout/HeaderPage.vue";
-  import Footer from './components/layout/Footer.vue'
+  import HeaderPage from "./components/layout/HeaderPage.vue"
 
 </script>
 
 <template>
   <div class="h-[100vh] max-w-full relative">
     <HeaderPage></HeaderPage>
-    <RouterView></RouterView>
-    <Footer></Footer>
+    <RouterView class="pb-20" >
+    </RouterView>
   </div>
     
 </template>

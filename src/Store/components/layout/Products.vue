@@ -20,7 +20,7 @@
 
 <template>
   <Loader v-if="isLoading"></Loader>
-  <div class="pt-6 max-w-full grid grid-cols-[repeat(auto-fill,minmax(250px,1fr))] gap-6 pl-6 pr-16">
+  <div class="pt-6 max-w-full grid grid-cols-[repeat(auto-fill,minmax(250px,1fr))] gap-6 pl-1 pr-16">
     <CardProducto v-for="product in  products" :key="product.id" :product="product"></CardProducto>
   </div>
 </template>

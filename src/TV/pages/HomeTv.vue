@@ -38,17 +38,21 @@
 </script>
 
 <template>
-  <Loader v-if="isLoading"></Loader>
   <div class="max-w-full">
-    <SerieTop :serie="serieTop"></SerieTop>
-    <Genres :genres="genresTv"></Genres>
-    <div class="w-11/12 m-auto flex gap-5 pt-5">
-      <button :disabled="page <= 1? true:false" @click="changePage(page - 1)" class="text-white border-2 font-bold rounded-md pl-3 pr-3 capitalize hover:bg-sky-700">{{ '<' }}</button>
-      <button @click="changePage(page + 1)" class="text-white border-2 font-bold rounded-md pl-3 pr-3 capitalize hover:bg-sky-700">{{ '>' }}</button>
-      <p class="ml-3 text-white font-bold">pagina {{ page }}</p>
-    </div>
-    <SeriesTv :series="allSeries"></SeriesTv>
+    <Loader v-if="isLoading"></Loader>
+    <div class="max-w-full">
+      <SerieTop :serie="serieTop"></SerieTop>
+      <Genres :genres="genresTv"></Genres>
+      <div class="w-11/12 m-auto flex gap-5 pt-5">
+        <button :disabled="page <= 1? true:false" @click="changePage(page - 1)" class="text-white border-2 font-bold rounded-md pl-3 pr-3 capitalize hover:bg-sky-700">{{ '<' }}</button>
+        <button @click="changePage(page + 1)" class="text-white border-2 font-bold rounded-md pl-3 pr-3 capitalize hover:bg-sky-700">{{ '>' }}</button>
+        <p class="ml-3 text-white font-bold">pagina {{ page }}</p>
+      </div>
+      <SeriesTv :series="allSeries"></SeriesTv>
   </div>
+
+  </div>
+  
   
 </template>
 
