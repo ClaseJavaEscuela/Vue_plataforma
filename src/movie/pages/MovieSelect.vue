@@ -52,7 +52,7 @@ getMovie();
       <div class="flex gap-3 pl-2">
         <Genre v-for="genre in movieSelect.genres" :key="genre.id" :name="genre.name"></Genre>
       </div>
-      <div class="descripcion max-w-[600px] pl-2 max-h-[130px] overflow-auto">
+      <div class="descripcion contenedor max-w-[600px] pl-2 max-h-[130px] overflow-auto">
         <p class="w-full text-white font-light">{{ movieSelect.overview ? movieSelect.overview : "Sin descripcion" }}</p>
       </div>
       <div class="flex flex-col gap-1 pl-2 text-white font-semibold">
