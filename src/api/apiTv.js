@@ -1,6 +1,5 @@
 import { axiosTV } from "./axios";
 import {API_KEY} from '../api/utils.js'
-// https://api.themoviedb.org/3/tv/{id}?api_key={tu_api_key}&language=es-ES
 export const getAllSeries=async(indexPage)=>{
   try{
     const res = await axiosTV.get(`trending/tv/day?api_key=${API_KEY}&language=es&page=${indexPage}`);
