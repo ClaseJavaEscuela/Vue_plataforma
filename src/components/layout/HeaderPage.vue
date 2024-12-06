@@ -24,13 +24,15 @@
 <style scoped>
     .link {
     text-decoration: none; /* Asegura que no haya subrayado por defecto */
-    transition: all 1s ease;
+    transition: all .5s ease;
+    width: 55px;
+    text-align: center;
   }
 
   .link:hover {
     text-decoration: underline; /* Solo transiciona el subrayado */
     font-weight: bold;
     transform: scale(1.2);
-    transition: all 1s ease; /* Transición solo para la propiedad 'text-decoration-line' */
+    transition: all .5s ease; /* Transición solo para la propiedad 'text-decoration-line' */
   }
 </style>

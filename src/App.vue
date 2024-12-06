@@ -1,6 +1,7 @@
 <script setup>
   import{RouterView} from 'vue-router';
   import HeaderPage from "./components/layout/HeaderPage.vue";
+  import Footer from './components/layout/Footer.vue'
 
 </script>
 
@@ -8,6 +9,7 @@
   <div class="h-[100vh] max-w-full relative">
     <HeaderPage></HeaderPage>
     <RouterView></RouterView>
+    <Footer></Footer>
   </div>
     
 </template>
