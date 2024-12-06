@@ -27,10 +27,10 @@
 
 @keyframes select {
   0% {
-    transform: translateY(15px); /* Inicio */
+    transform: translateY(15px); 
   }
   100% {
-    transform: translateY(-5px); /* Fin */
+    transform: translateY(-5px); 
   }
 }
 

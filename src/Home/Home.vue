@@ -1,7 +1,7 @@
 <script>
   import { RouterLink } from 'vue-router';
 </script>
-<!-- w-[full] translate-y-24 ml-6 -->
+
 <template>
    <div class="w-[full] min-h-screen bg-gradient-to-b from-[#02050a] to-[#0a1520] flex flex-col justify-center items-center text-gray-100 p-6">
     <main class="text-center">
